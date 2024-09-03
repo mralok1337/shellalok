@@ -1,0 +1,38 @@
+commad Terminal CLI Linux ubuntu
+
+mkdir /make dir
+touch /make file
+ll /melihat file 
+cp -r /copy recorsip
+cp -r  test.txt ../ 
+../ /untuk mundur 1 Langkah
+rm -rf / untuk menghapus 
+cd - /untuk pindah ke directory /home/fin
+mv /untuk memindahkan file
+whoami : untuk melihat siapa saya(User)
+
+
+
+
+
+
+
+
+
+
+
+
+curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+
+
+
+
+
+
+
+
+
+
+
+
+

